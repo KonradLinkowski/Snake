@@ -5,7 +5,7 @@ import { Apple, Direction, SnakePart } from './types';
 
 const scoreElement = document.querySelector<HTMLSpanElement>('#score')!;
 const canvas = document.querySelector<HTMLCanvasElement>('#game')!;
-const smaller = Math.min(innerWidth, innerHeight);
+const smaller = Math.min(innerWidth, innerHeight) - 200;
 canvas.width = smaller;
 canvas.height = smaller;
 const ctx = canvas.getContext('2d')!;
